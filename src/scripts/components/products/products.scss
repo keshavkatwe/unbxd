@@ -1,0 +1,25 @@
+@import "../../mixins/mixins";
+
+.products {
+  .product__item {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@include respond-to(xs){
+  .products {
+    .product__item {
+      width: 100%;
+    }
+  }
+}
+
+@include respond-to(sm){
+  .products {
+    .product__item {
+      width: 49%;
+    }
+  }
+}

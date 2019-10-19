@@ -1,0 +1,54 @@
+@import "../../mixins/mixins";
+.main {
+  .header {
+
+  }
+
+  .split {
+    .filter
+    {
+      padding: 20px;
+      display: none;
+    }
+    .left-bar {
+      position: fixed;
+      //float: left;
+      width: 300px;
+      background: #FFFFFF;
+      height: calc(100vh - 30px);
+      overflow: auto;
+    }
+
+    .right-products {
+      padding: 20px;
+      margin-left: 300px;
+      border-left: 1px solid #DDD;
+    }
+  }
+}
+
+@include respond-to(xs){
+  .main {
+    .header {
+
+    }
+
+    .split {
+      .filter{
+        display: block;
+      }
+      .left-bar {
+        box-shadow: 2px 1px 9px 1px #a5a5a5;
+        left: -300px;
+
+        &.left-bar__active{
+          left: 0px;
+        }
+      }
+
+      .right-products {
+        margin-left: 0;
+      }
+    }
+  }
+}
