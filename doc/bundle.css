@@ -1,0 +1,16 @@
+*{box-sizing:border-box}body{font-family:Arial, serif;margin:0;padding:0}
+
+.main .split .filter{padding:20px;display:none}.main .split .left-bar{position:fixed;width:300px;background:#FFFFFF;height:calc(100vh - 30px);overflow:auto}.main .split .right-products{padding:20px;margin-left:300px;border-left:1px solid #DDD}@media only screen and (max-width: 767px){.main .split .filter{display:block}.main .split .left-bar{box-shadow:2px 1px 9px 1px #a5a5a5;left:-300px}.main .split .left-bar.left-bar__active{left:0px}.main .split .right-products{margin-left:0}}
+
+.product{text-align:center;padding:5px}.product img{width:100%}
+
+.products .product__item{width:24%;display:inline-block;vertical-align:top}@media only screen and (max-width: 767px){.products .product__item{width:100%}}@media only screen and (min-width: 768px) and (max-width: 991px){.products .product__item{width:49%}}
+
+.facet__config{padding-bottom:10px}
+
+.facets .facel__item{padding:20px}
+
+.header{padding:10px}.header .search{text-align:center}.header .search input{width:300px;height:30px;font-size:14px}
+
+
+/*# sourceMappingURL=bundle.css.map*/
